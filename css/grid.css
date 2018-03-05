@@ -99,7 +99,7 @@ li > a:before{
 	bottom: 0;
 	left: 0;
 	background-color: #000;
-	visibility: hidden;
+	visibility: visible;
 	transform: scaleX(0);
 	transition: all 0.3s ease-in-out 0s;
 }
