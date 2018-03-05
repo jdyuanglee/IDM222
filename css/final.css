@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* margin: 0 2rem; */
+}
+img{
+    10%;
+}
+
+header img{
+    text-align: center;
+    height: 3rem;
+    border: none;
+}
+
+nav{
+    display: none;
+    /* background-color: aqua; */
+    height: 4rem;
+    width: 100%; 
+    text-align: center;
+}
+
+/* nav ul li{
+    display: inline-block;
+} */
+
+/* nav ul li a{
+    padding: 0 .7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+
+nav ul li a:hover{
+    color: aqua;
+    transition: .6s ease-in-out;
+} */
+
+.start{
+    text-align: center;
+}
+
+.aboutme img{
+    height: 8rem;
+}
+
+.aboutme p{
+    margin: 1rem 2rem;
+    text-align: left;
+}
+
+p{
+    font-size: .9rem;
+}
+
+.aboutme{
+    text-align: center;
+}
