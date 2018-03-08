@@ -1,23 +1,27 @@
 @media screen and (min-width: 960px){
+	aside{
+		text-align: center;
+		margin: 0 25rem;
+	}
 	aside p{
 		font-size: .8rem;
 		padding: 5rem 15rem 1rem 15rem;		
 	}
-	nav ul li:nth-child(3) a{
-		color: #fdbf46;
+	nav ul li:nth-child(4) a{
+		color: #27849d;
 	}
-	li:nth-child(3) > a:before{
+	li:nth-child(4) > a:before{
 	visibility: hidden;
 	}
 	.grid{
 		display: grid;
-		grid-template-columns: 5rem 23rem 1fr 5rem;
+		grid-template-columns: 5rem 1fr 1fr 5rem;
 		grid-template-rows: 9vh auto;
 		grid-template-areas: 
 		"menu logo logo search"
 		"ph ph ph ph"
 		"nav nav nav nav"
-		"aside aside aside aside"
+		". aside aside ."
 		". media footer .";
 	}
 }

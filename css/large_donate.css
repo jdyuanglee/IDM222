@@ -4,11 +4,14 @@
 		padding: 5rem 15rem 1rem 15rem;		
 	}
 	nav ul li:nth-child(6) a{
-		color: #bbb;
+		color: #e24d53;
+	}
+	li:nth-child(6) > a:before{
+	visibility: hidden;
 	}
 	.grid{
 		display: grid;
-		grid-template-columns: 5rem 23rem 1fr 5rem;
+		grid-template-columns: 5rem 1fr 1fr 5rem;
 		grid-template-rows: 9vh auto;
 		grid-template-areas: 
 		"menu logo logo search"
