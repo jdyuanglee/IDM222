@@ -1,3 +1,6 @@
+/* aside{
+	margin: 0;
+} */
 @media screen and (min-width: 960px){
 	aside p{
 		font-size: .8rem;
@@ -6,13 +9,11 @@
 	aside{
 		padding: 0 9rem;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 		grid-gap: 1.3rem;
 		grid-row-gap:1.3rem;
 	}
 	aside img {
-		max-width: 359px;
-		max-height: 238px;
 		width: 100%;
 	}
 	nav ul li:nth-child(2) a{

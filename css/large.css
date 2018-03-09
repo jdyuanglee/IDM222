@@ -24,10 +24,16 @@
 		text-align: center;
 	}
 	nav ul li{
+				background-color: white;
 		display: inline;
 		padding: 0 1rem;
 	}
-	
+	nav ul li a{
+	color: black;
+	}
+	nav ul li:nth-child(n+1){
+		background-color: white;	
+	}
 	nav ul{
 		background: #ffffff;
 	}
