@@ -40,11 +40,11 @@
 	nav a{
 		font-size: .8rem;
 	}
-	main{
+	aside{
 		margin: 3rem 0 0 0;
 	}
 
-	aside p{
+	main p{
 		font-size: .8rem;
 		padding: 5rem 7rem 1rem 0;		
 	}
@@ -59,7 +59,7 @@
 		"menu logo logo search"
 		"ph ph ph ph"
 		"nav nav nav nav"
-		". main aside aside"
+		". aside main main"
 		". media footer .";
 	}
 }

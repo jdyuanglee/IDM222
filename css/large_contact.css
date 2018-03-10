@@ -1,9 +1,9 @@
 @media screen and (min-width: 960px){
-	aside{
+	main{
 		text-align: center;
 		margin: 0 25rem;
 	}
-	aside p{
+	main p{
 		font-size: .8rem;
 		padding: 5rem 15rem 1rem 15rem;		
 	}
@@ -21,7 +21,7 @@
 		"menu logo logo search"
 		"ph ph ph ph"
 		"nav nav nav nav"
-		". aside aside ."
+		". main main ."
 		". media footer .";
 	}
 }

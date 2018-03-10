@@ -1,11 +1,12 @@
 @media screen and (min-width: 960px){
-	aside{
+	main{
 		text-align: center;
-		margin: 0 10rem;
+		max-width: 62%;
+		margin: auto;
 	}
-	aside p{
+	main p{
 		font-size: .8rem;
-		padding: 5rem 15rem 1rem 15rem;		
+		padding: 2.5rem 0;		
 	}
 	nav ul li:nth-child(4) a{
 		color: #27849d;
@@ -21,7 +22,7 @@
 		"menu logo logo search"
 		"ph ph ph ph"
 		"nav nav nav nav"
-		". aside aside ."
+		". main main ."
 		". media footer .";
 	}
 }
