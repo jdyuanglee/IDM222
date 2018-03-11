@@ -64,11 +64,11 @@ nav ul li{
 	padding: 15px;
 	text-align: center;
 }
-nav ul li a{
-	color: white;
-}
+/* nav ul li a{
+	color: bla;
+} */
 nav ul li:nth-child(1){
-	background-color: #991d08;	
+	background-color: #bbb;	
 }
 nav ul li:nth-child(2){
 	background-color: #169e60;	
@@ -132,7 +132,7 @@ li > a:hover:before{
 	}*/
 
 li:nth-child(1) > a:before{
-	background-color: #991d08;
+	background-color: #bbb;
 }li:nth-child(2) > a:before{
 	background-color: #169e60;
 }li:nth-child(3) > a:before{
