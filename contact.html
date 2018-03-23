@@ -5,25 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Donate</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/responsive_navbar.js"></script>
-    <script src="http://www.jgilmore.com/cart/scartlib.aspx"></script>
-    <link rel="stylesheet" href="http://www.jgilmore.com/cart/shoppingcart.css">
-    <script>
-        var scart = new shoppingcart();
-        scart.Paypal.business = "sandbox@paypal.com";
-    </script>
 </head>
 
 <body>
     <div class="grid">
 
         <div class="menu">
-            <img src="resources/threelines.png" alt="menu">
+            <button class="hb-button">
+                <img src="resources/threelines.png" alt="menu">
+            </button>
         </div>
         <div class="logo">
             <p>Yuang Li</p>
@@ -49,16 +45,28 @@
                     <a href="musing.html">musings</a>
                 </li>
                 <li>
-                    <a href="portfolio.html">portfolio</a>
-                </li>
-                <li>
                     <a href="#">contact</a>
                 </li>
             </ul>
         </nav>
         <main>
-            <h1>Google Map</h1>
-            <h1>Email</h1>
+            <div class="address">
+                <p> Address</p><p>3141 Chestnut St, Philadelphia, PA, 19104</p>
+                <br>
+                <p>
+                    <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.3193286835017!2d-75.19213278453108!3d39.95661267942138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c64e4847c029%3A0xef32de4043c30f0!2sDrexel+University!5e0!3m2!1sen!2sus!4v1521773219117"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </p>
+            </div>
+
+            <div class="phone">
+                <br>
+                <p>Phone</p>
+                <p>(+1) 215-316-4783</p>
+            </div>
+
         </main>
         <div class="media">
             <ul>
@@ -93,11 +101,10 @@
         <footer>
             <div class="icons"></div>
             <div class="copyright">
-                Copyright
+                Copyright 2018
             </div>
         </footer>
     </div>
-    <script src="js/responsive_navbar.js"></script>
 </body>
 
 </html>
