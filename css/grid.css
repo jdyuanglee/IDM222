@@ -1,182 +1,24 @@
-*{
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-html{
-	font-size: 100%;
-}
-
-img{
-	display: block;
-	max-width: 100%;
-	text-align: center;
-	margin: auto;
-}
-
-.menu{
-	display: block;
-	padding: 1.2rem;
-	grid-area: menu;
-	text-align: center;
-	cursor: pointer;
-}
-.logo{
-	/* solve auto center logo p */
-	margin: 1.5rem auto;
-	grid-area: logo;
-	text-align: center;
-	height: 8rem;
-}
-.logo p{
-	text-transform: uppercase;
-	font-size: 1.8rem;
-	letter-spacing: -1px;
-	font-family: serif;
-}
-.logo img{
-	max-height: 100%;
-	display: none;
-}
-.search{
-	padding: 1.2rem;
-	grid-area: search;
-	cursor: pointer;
-}
-
-.ph{
-	height: 12vh;
-	grid-area: ph;
-	display: none;
-}
-
-nav{
-	grid-area: nav;
-	width: 100%;
-	/* overflow: hidden; */
-	/* border-bottom: black; */
-}
-
-nav ul li{
-	list-style-type: none;
-	padding: 15px;
-	text-align: center;
-}
-/* nav ul li a{
-	color: bla;
-} */
-nav ul li:nth-child(1){
-	background-color: #bbb;	
-}
-nav ul li:nth-child(2){
-	background-color: #169e60;	
-}
-nav ul li:nth-child(3){
-	background-color: #fdbf46;	
-}
-nav ul li:nth-child(4){
-	background-color: #27849d;	
-}
-nav ul li:nth-child(5){
-	background-color: #9d60b3;	
-}
-nav ul li:nth-child(6){
-	background-color: #e24d53;	
-}
-nav a{
-	letter-spacing: 2px;
-	display: inline-block;
-}
-
-li > a{
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #282828;
-	/* text-align: center; */
-	font-size: 1.2rem;
-	/* padding: .2rem 0; */
-	position: relative;
-}
-
-/* nav ul li:first-child {
-
-} */
-
-
-li > a:hover{
-	color: #000;
-}
-
-li > a:before{
-	margin: 0 0 -.1rem 0;
-	content:"";
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	visibility: hidden;
-	transform: scaleX(0);
-	transition: all 0.3s ease-in-out 0s;
-}
-
-li > a:hover:before{
-	visibility: visible;
-	transform: scaleX(1);
-}
-
-/*	nav ul li:nth-child(1) a{
-		color: #169e60;
-	}*/
-
-li:nth-child(1) > a:before{
-	background-color: #bbb;
-}li:nth-child(2) > a:before{
-	background-color: #169e60;
-}li:nth-child(3) > a:before{
-	background-color: #fdbf46;
-}li:nth-child(4) > a:before{
-	background-color: #27849d;
-}li:nth-child(5) > a:before{
-	background-color: #9d60b3;
-}li:nth-child(6) > a:before{
-	background-color: #e24d53;
-}
-
 aside{
-	grid-area: aside;
-	padding-top: 3rem;
-	padding-bottom: 2rem;
+	padding: 3rem 0 2rem 0;
 }
 
-main{
-	grid-area: main;
-	margin: 1rem;
+main p{
+	line-height: 1.5rem;
+	margin: 1.5rem 3rem;
 }
 
-.media{
-	padding: 0 0 0 1rem;
-	grid-area: media;
-}
 
-.media ul li{
-	display: inline-block;
-	padding: .2rem;
-}
+/* .copyright{
+	padding: 1rem;
+} */
 
-.media img{
-	max-width: 2rem;
-}
-
-nav ul.show{
-	max-height: 20em;
-}
+/* nav ul.show{
+	max-height: 20rem;
+} */
 
 .grid{
 	display: grid;
-	grid-template-columns: 5rem 1fr 1fr 5rem;
+	grid-template-columns: 4rem 1fr 1fr 5rem;
 	grid-template-rows: 9vh auto;
 	grid-template-areas: 
 	"menu logo logo search"
@@ -189,29 +31,56 @@ nav ul.show{
 
 .aboutme img{
 	height: 10rem;
-	justify-items: center;
+	/* justify-items: center; */
 }
 
-.aboutme p{
+
+@media (min-width: 768px){
+	aside{
+		margin: auto;
+	}
+
+	.grid{
+		display: grid;
+		grid-template-columns: 5rem 23rem 1fr 5rem;
+		grid-template-rows: 9vh auto;
+		grid-template-areas: 
+		"menu logo logo search"
+		"ph ph ph ph"
+        "nav nav nav nav"
+        "aside aside aside aside"
+		". main main ."
+		". media footer .";
+	}
+}
+@media (min-width: 960px){
+	main p{
+		font-size: .8rem;
+		padding: 5rem 7rem 1rem 0;		
+		margin: 0;
+	}
+	.grid{
+		display: grid;
+		grid-template-columns: 5rem 23rem 1fr 5rem;
+		grid-template-rows: 9vh auto;
+		grid-template-areas: 
+		"menu logo logo search"
+		"ph ph ph ph"
+		"nav nav nav nav"
+		". aside main main"
+		". media footer .";
+	}
+}
+
+/* .aboutme p{
 	margin: 1rem 2rem;
 	text-align: left;
 }
 
-main p{
-	font-size: 1rem;
-	padding: 1rem 3rem;
-	line-height: 1.5rem;
-}
-
 .aboutme{
 	text-align: center;
-}
+} */
 
-footer{
-	padding: 1rem 0;
-	grid-area: footer;
-	font-size: 0.7rem
-}
 
 /*
 main * + *{
@@ -224,3 +93,39 @@ main * + *:not(p){
 
 hover,focus
 */
+
+
+
+/* nav{
+	grid-area: nav;
+	width: 100%;
+	display: none;
+	height: 4rem;
+	width: 100%; 
+	border-bottom: black;
+}
+
+nav a{
+	text-decoration: none;
+	color: #282828;
+	font-size: 20px;
+	padding: 5px;
+	width: 100%;
+}
+
+nav ul{
+	list-style: none;
+	overflow: show;
+	color: black;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	transition: max-height 0.5s;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 1rem;
+} */
+
+/* 空出两边把两边物体往中间移动 */
